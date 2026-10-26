@@ -20,7 +20,225 @@
     justify-content: space-between;
     gap: 30px;
 }
+/* STUDENT B: SERVICES AND FOOTER */
+.services,
+.footer {
+    font-family: Arial, sans-serif;
+}
 
+.services *,
+.footer * {
+    box-sizing: border-box;
+}
+
+.services .container,
+.footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.services .section-heading {
+    max-width: 650px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.services .section-subtitle {
+    margin: 0 0 18px;
+    color: #a94e70;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.services .section-heading h2 {
+    margin: 0 0 18px;
+    color: #442b35;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.services .section-heading > p:last-child {
+    margin: 0;
+    color: #77666d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.services .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+}
+
+.services .service-card {
+    padding: 38px 28px;
+    text-align: center;
+    background: #fff9fb;
+    border: 1px solid #f2e2e8;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 35px rgb(94 48 67 / 9%);
+}
+
+.services .service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 68px;
+    height: 68px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: #f8e7ee;
+    color: #a94e70;
+    font-size: 30px;
+}
+
+.services .service-card h3 {
+    margin: 0 0 15px;
+    color: #442b35;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.services .service-card p {
+    margin: 0 0 22px;
+    color: #77666d;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.services .service-link {
+    color: #a94e70;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.services .service-link:hover {
+    color: #8f3e5e;
+}
+
+.footer {
+    padding-top: 45px;
+    background: #442b35;
+    color: #ffffff;
+}
+
+.footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+.footer .logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer .logo span {
+    color: #e9a8c1;
+}
+
+.footer .footer-brand p,
+.footer .footer-contact p {
+    margin: 12px 0 0;
+    color: #e4ccd6;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.footer .footer-contact h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.footer .footer-contact a {
+    color: #f5e9ee;
+    overflow-wrap: anywhere;
+}
+
+.footer .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer .footer-links a {
+    color: #f5e9ee;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.footer .footer-links a:hover {
+    color: #e9a8c1;
+}
+
+.footer .footer-bottom {
+    padding: 20px 15px;
+    border-top: 1px solid rgb(255 255 255 / 15%);
+    text-align: center;
+}
+
+.footer .footer-bottom p {
+    margin: 0;
+    color: #e4ccd6;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .services .services-grid {
+        gap: 16px;
+    }
+
+    .services .service-card {
+        padding: 30px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding: 65px 0;
+    }
+
+    .services .services-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .services .service-card {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .footer .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer .footer-links {
+        gap: 18px;
+    }
+}
 /* Logo */
 .logo {
     font-size: 28px;
